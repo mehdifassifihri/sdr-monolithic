@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: SDR
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:3306/SDR?createDatabaseIfNotExist=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 8083
+
+secret:
+  key: 3304c82760031750a3c17a10b28639fccb2b9fccba3731f3e85b096ad930543821c3349318c922d5996e932fc0a74f957a8c4bf311c059c340642759795be7c4
